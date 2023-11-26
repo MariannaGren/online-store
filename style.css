@@ -1,220 +1,233 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    height: 100%;
-    font-size: 20px;
+  height: 100%;
+  font-size: 20px;
 }
 
 body {
-    text-align: center;
-    font-family: "Source Serif 4", Arial, sans-serif;
-    font-style: normal;
-    font-weight: 300;
+  text-align: center;
+  font-family: "Source Serif 4", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
 }
 
 main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 a {
-    color: #FFF;
-    text-decoration: none;
-    font-family: 'Playpen Sans', cursive, Arial, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Playpen Sans", cursive, Arial, sans-serif;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.1rem;
-    font-weight: bold;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.3rem;
+  font-weight: bold;
+
 }
 
 .logo-background {
-    background: #4f0341;
-    color: #fff;
-    padding: 20px 0 10px 100px;
-    text-align: left;
+  background: #4f0341;
+  color: #fff;
+	padding: 44px 150px 45px 70px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.icons {
+	display: flex;
+  align-items: center;
+}
+
+
+.icons-item:not(:last-child) {
+	margin-right: 30px;
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
 }
 
 .nav a,
 footer a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 1.1rem;
-    font-weight: 500;
-    list-style: none;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.1rem;
+  font-weight: 500;
+  list-style: none;
 }
 
 .background {
-    background-image: url("./img/background.jpg");
-    font-family: 'Playpen Sans', cursive, Arial, sans-serif;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
-    overflow: hidden;
-    width: 100%;
-    color: #f7e8ac;
-    padding: 100px 0;
+  background-image: url("./img/background.jpg");
+  font-family: "Playpen Sans", cursive, Arial, sans-serif;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  overflow: hidden;
+  width: 100%;
+  color: #f7e8ac;
+  padding: 100px 0;
 }
 
 .about p {
-    font-size: 1.25rem;
-    font-weight: 400;
-    margin: 35px auto 60px;
-    max-width: 1000px;
-    text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 35px auto 60px;
+  max-width: 1000px;
+  text-align: center;
 }
 
 .container {
-    width: 1300px;
-    margin: 0 auto;
-    position: relative;
+  width: 1300px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .filters {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
 }
 
 .site-search {
-    display: flex;
+  display: flex;
 }
 
 .site-search input {
-    width: 100%;
-    height: 35px;
-    padding-left: 10px;
-    border: 2px solid #203e41;
-    border-radius: 5px;
-    outline: none;
-    background: #F9F0DA;
-    color: #000;
+  width: 100%;
+  height: 35px;
+  padding-left: 10px;
+  border: 2px solid #203e41;
+  border-radius: 5px;
+  outline: none;
+  background: #f9f0da;
+  color: #000;
 }
 
 .site-search button {
-    width: 35px;
-    height: 35px;
-    border: none;
-    background: #4f0341;
-    color: #FFF;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: #4f0341;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
 
 #shop-items {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
 }
 
 .shop-item {
-    width: calc((100% - 72px) / 3);
-    text-align: left;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: #F3F7EA;
+  width: calc((100% - 72px) / 3);
+  text-align: left;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #f3f7ea;
 }
 
 .shop-item:not(:nth-child(3n)) {
-    margin-right: 24px;
+  margin-right: 24px;
 }
 
-.shop-item:nth-child(n+4) {
-    margin-top: 24px;
+.shop-item:nth-child(n + 4) {
+  margin-top: 24px;
 }
 
 .shop-item .content {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-grow: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 1;
 }
 
 .shop-item img {
-    height: 360px;
+  height: 360px;
 }
 
 .shop-item img:hover {
-    transform: scale(2);
+  transform: scale(2);
 }
 
 .shop-item h1 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .shop-item .price {
-    color: #ED1557;
-    padding: 4px 8px;
-    font-weight: 500;
-    font-size: 1.1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    display: block;
-    margin-top: auto;
+  color: #ed1557;
+  padding: 4px 8px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin-top: auto;
 }
 
 .button {
-    background: #4f0341;
-    color: #FFF;
-    margin: 20px auto;
-    display: block;
-    width: 250px;
-    height: 30px;
-    line-height: 30px;
-    font-weight: 300;
-    border-radius: 15px;
-    transition: all 0.5s linear;
-    text-align: center;
-    cursor: pointer;
-    font-family: 'Playpen Sans', cursive, Arial, sans-serif;
+  background: #4f0341;
+  color: #fff;
+  margin: 20px auto;
+  display: block;
+  width: 250px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: 300;
+  border-radius: 15px;
+  transition: all 0.5s linear;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Playpen Sans", cursive, Arial, sans-serif;
 }
 
 .button:hover {
-    background: #25011e;
+  background: #25011e;
 }
 
 .shop-item .price:hover {
-    color: #4f0341;
+  color: #4f0341;
 }
 
 footer {
-    text-align: center;
-    padding: 20px 0;
+  text-align: center;
+  padding: 20px 0;
 }
 
 #nothing-found {
-    position: absolute;
-    white-space: nowrap;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 500;
+  position: absolute;
+  white-space: nowrap;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
 }
